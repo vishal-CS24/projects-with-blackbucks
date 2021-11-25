@@ -1,0 +1,46 @@
+h1{
+   
+    border: 2PX solid black;
+    background-image: url("/images/pexels-sora-shimazaki-5926462.jpg");
+    background-size: cover;
+    height: 100px;
+    text-align: center;
+    margin-top: 2px;
+    padding-top: 110px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.prod{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding-top: 10px;
+    width: 240px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: darkgrey;
+    text-align: center;
+    imh
+
+}
+.prod>img {
+
+    width: 200px;
+    height: 250px;
+   padding: 10px;
+   padding-bottom: 0%;
+}
+.prod:hover{
+    background-color: rgb(54, 90, 13);
+    
+
+}
+.offer{
+    border:2px solid black;
+    background-color: rgb(191, 243, 70);
+    color: rgb(247, 6, 6);
+
+}
+body{
+    background-color: lightpink;
+    border: 2px solid black;
+    padding: 5px;
+}

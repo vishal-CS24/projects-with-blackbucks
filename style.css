@@ -1,0 +1,45 @@
+.pic{
+    height: 80vh;
+    width: 100%;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: cyan;
+}
+.notification
+{   padding-left: 20px;
+    background-color: aquamarine;
+    padding-right: 5px;
+}
+.grid{
+    display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+.about1 .abimg{
+    height: 35vh;
+    width: 60vh;
+   
+    
+    }
+.abimg{
+    padding-left: 22px;
+}
+.about1{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-color: greenyellow;
+
+}
+h2{
+color: red;l
+}
+.contact{
+    padding-left: 20px;
+    background-color:lightpink;
+}
+h1{ text-align: center;
+    background-color: rgb(7, 192, 78);
+}
