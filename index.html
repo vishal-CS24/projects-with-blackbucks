@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <img src="logo.jpg" class="brand-logo" alt="">
+            <div class="proname">STUDENT STORE</div>
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search college" list="datalist" onkeyup="show(this.value)" id="sample1">
+                    <button class="search-btn" onclick="getsearch()">search</button>
+                </div>
+                <a href="login.html"><img src="usericon.png" alt=""></a>
+                <a href="cartpage1.html"><img class="replace" src="carticon.png" alt=""></a>
+            </div>
+        </div>
+        </nav>
+        <ul class="links-container">
+            <li class="link-item"><a href="menview.html" class="link" onclick="myFunction()" class="dropbtn">Men</a></li>
+            <li class="link-item"><a href="womenview.html" class="link" >women</a></li>
+            <li class="link-item"><a href="kidsview.html" class="link">Kids</a></li>
+            <li class="link-item"><a href="acessoriesview.html" class="link">Accessories</a></li>
+        </ul>
+        <header>
+            <div class="slideshow-container fade">
+                <div class="Containers">
+                  <div class="MessageInfo">1 / 3</div>
+                  <img src="uni3.jpg" style="width:100%">
+                  <div class="Info"></div>
+                </div>
+              
+                <div class="Containers">
+                  <div class="MessageInfo">2 / 3</div>
+                  <img src="uni4.jpg" style="width:100%">
+                  <div class="Info"></div>
+                </div>
+              
+                <div class="Containers">
+                  <div class="MessageInfo">3 / 3</div>
+                  <img src="uni5.jpg" style="width:100%">
+                  <div class="Info"></div>
+                </div>
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              <div style="text-align:center">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+              </div> 
+        </header>
+        <div class="changedir">
+        <div class="product-card">
+            <div class="logo-cart">
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active" src="shirt1.jpg" alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name"><a href="productview.html">LEVIS SHIRT</a></span>
+              <p>uniform of khalsa college.</p>
+              <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bx-star' ></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <!-- <span class="color">Colour:</span> -->
+                <!-- <div class="circles">
+                  <span class="circle blue active"  id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div> -->
+              </div>
+              <div class="price">
+                <span class="price_num">₹900</span>
+                <span class="price_letter">Nine rupees only</span>
+              </div>
+            </div>
+            <div class="button">
+              <div class="button-layer"></div>
+              <button onclick="cartreplace()">Add To Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="logo-cart">
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active" src="pent1.jpg" alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name">LEVIS SHIRT</span>
+              <p>uniform of khalsa college.</p>
+              <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bx-star' ></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <!-- <span class="color">Colour:</span> -->
+                <!-- <div class="circles">
+                  <span class="circle blue active"  id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div> -->
+              </div>
+              <div class="price">
+                <span class="price_num">₹900</span>
+                <span class="price_letter">Nine rupees only</span>
+              </div>
+            </div>
+            <div class="button">
+              <div class="button-layer"></div>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="logo-cart">
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active" src="pentshirt.jpg" alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name">LEVIS SHIRT</span>
+              <p>uniform of khalsa college.</p>
+              <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bx-star' ></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <!-- <span class="color">Colour:</span> -->
+                <!-- <div class="circles">
+                  <span class="circle blue active"  id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div> -->
+              </div>
+              <div class="price">
+                <span class="price_num">₹900</span>
+                <span class="price_letter">Nine rupees only</span>
+              </div>
+            </div>
+            <div class="button">
+              <div class="button-layer"></div>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="logo-cart">
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active" src="tshirt1.jpg" alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name">LEVIS SHIRT</span>
+              <p>uniform of khalsa college.</p>
+              <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bx-star' ></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <!-- <span class="color">Colour:</span> -->
+                <!-- <div class="circles">
+                  <span class="circle blue active"  id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div> -->
+              </div>
+              <div class="price">
+                <span class="price_num">₹900</span>
+                <span class="price_letter">Nine rupees only</span>
+              </div>
+            </div>
+            <div class="button">
+              <div class="button-layer"></div>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        <footer>
+            <p class="footer-title">about company</p>
+            <p class="info">Starting as a small business by the B.Tech undergraduates  in JALANDHAR/INDIA/2021 with  big dreams. Our passion for SCHOOL UNIFORMS AND OHTER STUDENT RELATED THINGS  means that we provide our customers with nothing but the highest quality of products, that are guaranteed to meet their needs and keep them satisfied!
+
+              With a motivated team, we strive to be the creative minds that bring a smile to your face. That’s why we’re always looking for innovative new ways to get the best to you.</p>
+            <p class="info">support emails-<a href="mailto:gurjindersinghm2@gmail.com" >help@student.com</a>, customersupport@student.com</p>
+            <p class="info">telephone - <a href="tel:6283331557">6283331557</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="seller.html">Seller page</a></p>
+            <div class="footer-social-container">
+                <div>
+                    <a href="#" class="social-link">terms & services</a>
+                    <a href="#" class="social-link">privacy page</a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/accounts/login/" class="social-link">instagram</a>
+                    <a href="https://www.facebook.com/" class="social-link">facebook</a>
+                    <a href="https://twitter.com/i/flow/login" class="social-link">twitter</a>
+                </div>
+            </div>
+            <p class="footer-credit">Clothing, Best apparels online store</p>
+        </footer>
+        <datalist id="datalist"></datalist>
+        <script src="nav.js"></script>
+        <script src="searchlist.js"></script>
+</body>
+</html>

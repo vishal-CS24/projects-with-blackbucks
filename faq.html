@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faq.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <h1 class="faq-page">What is an FAQ Page?</h1>
+                <div class="faq-body">
+                    <p>it is frequently asked questions by user.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <h1 class="faq-page">Why do you need an FAQ page?</h1>
+                <div class="faq-body">
+                    <p>whatever question a customer needs he will find here.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+<h1 class="faq-page">Does it improves the user experience of a website?</h1>
+<div class="faq-body">
+<p>yes ofcourse,because servers are better.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script >
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+Output
+    </script>
+</body>
+
+
+</html>
